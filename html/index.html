@@ -47,8 +47,16 @@
                             <el-menu-item index="2-4-3">选项3</el-menu-item>
                           </el-submenu>
                         </el-submenu>
-                        <el-menu-item index="3">最新資訊</el-menu-item>
+                        <el-submenu index="3" show-timeout="0" hide-timeout="0">
+                            <template slot="title">最新資訊</template>
+                            <el-menu-item index="2-4-1">伺服器公告</el-menu-item>
+                            <el-menu-item index="2-4-2">活動資訊</el-menu-item>
+                        </el-submenu>
                         <el-menu-item index="3">合作申請</el-menu-item>
+                        <el-tooltip class="item" effect="dark" content="論壇尚未開放" placement="bottom">
+                            <el-menu-item index="3" disabled>玩家論壇</el-menu-item>
+                          </el-tooltip>
+                        
                         <el-menu-item index="4">贊助我們</el-menu-item>
                         <el-menu-item index="5">製作團隊</el-menu-item>
                         <el-menu-item index="6">錯誤回報</el-menu-item>
@@ -58,8 +66,8 @@
                     
                 </div>
                 
-                <div class="block">
-                    <el-carousel height="675px" trigger="click" height="150px">
+                <div class="imger">
+                    <el-carousel trigger="click" height="200px">
                       <el-carousel-item><img src='../assets/imgs/img1.png'></el-carousel-item>
                       <el-carousel-item><img src='../assets/imgs/img2.png'></el-carousel-item>
                       <el-carousel-item><img src='../assets/imgs/img3.png'></el-carousel-item>

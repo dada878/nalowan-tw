@@ -11,6 +11,12 @@
     border-width: 0px 0px 1px 0px;
     border-color: #e6e6e6;
     position: sticky ;
+    box-shadow: 0px 10px 15px -18px #111;
+    /* box-shadow: 50px -50px -50px 50px black; */
+}
+
+.imger {
+    width: 400px;
 }
 
 .anvbar ul {
