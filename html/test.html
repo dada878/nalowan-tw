@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.owo {
+				background-color: black;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="app">
+			
+			<h1>{{ message }}</h1>
+			<h2>{{ fun() }}</h2>
+			<div v-bind:class="{'owo':ok}">owo</div>
+			<h1>{{ ok ? 'YES' : 'NO' }}</h1>
+			<h1 v-if="see">{{see}}</h1>
+
+			<input v-on:keyup.enter="submit">
+			<input v-on:keyup.13="submit">
+			<a v-on:click.once="alert('w')">owo</a>
+
+			<ol>
+				<li v-for="i in items">
+					{{i}}
+				</li>
+			</ol>
+
+			<a v-on:click="cool()">Click me plz</a><br>
+			<h2 style="display: inline;">更改標題?</h2><input v-model="message">
+			<div v-html="html"></div>
+			<div v-html="ok ? 'none' : html"></div>
+			
+
+		</div>
+	</body>
+	<script src="../vuejs/vue.js"></script>
+	<script src="../node_modules/element-ui/lib/index.js"></script>
+	<script src="../js/test.js"></script>
+</html>
