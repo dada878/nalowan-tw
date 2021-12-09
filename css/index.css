@@ -1,6 +1,8 @@
+
+
 .anvbar {
-    position: sticky ;
-    margin: -10px;
+    top:0px;
+    margin: -5px;
     background-color: white;
     margin-bottom: 0.8%;
     z-index: 10;
@@ -8,10 +10,11 @@
     border-style: solid;
     border-width: 0px 0px 1px 0px;
     border-color: #e6e6e6;
+    position: sticky ;
 }
 
 .anvbar ul {
-    margin-left: 5%;
+    margin-left: 75px;
 }
 
 .iconImg {
