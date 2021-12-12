@@ -1,11 +1,5 @@
 /* @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css); */
 
-
-body {
-    margin: 0%;
-    font-family: 'Noto Sans TC', sans-serif;
-}
-
 .superTitle {
     color: rgb(255, 255, 148);
 }
@@ -29,33 +23,7 @@ body {
     background-image: url("../assets/hub/hub.png");
 }
 
-.anvbar {
-    top:0px;
-    background-color: white;
-    z-index: 10;
-    /* 邊框(底) */
-    border-style: solid;
-    border-width: 0px 0px 1px 0px;
-    border-color: #e6e6e6;
-    position: sticky ;
-    box-shadow: 0px 10px 15px -18px #111;
-    /* box-shadow: 50px -50px -50px 50px black; */
-}
-
 .imger {
     width: 400px;
 }
 
-.anvbar ul {
-    margin-left: 75px;
-}
-
-.iconImg {
-    display: inline;
-    padding-left: 10px;
-    padding-top: 5px;
-    width: 55px;
-    height: 55px;
-    z-index: 1231232;
-    float: left;
-}

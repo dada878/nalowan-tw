@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<title>無法找到該頁面</title>
+		<link rel="icon" href="../assets/hub/favicon.png">
+		<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+		<link rel="stylesheet" href="../node_modules/element-ui/lib/theme-chalk/index.css">
+		<link rel="stylesheet" href="../css/main.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanstc.css">
+    </head>
+    <body>
+        <div id="app">
+            <import id="anvbar"></import>
+            <div style="width: 100%;height: 100%;color: #4b4b4b;text-align: center;padding-top: 40px;">
+                <h1 style="font-size: 100px;margin-bottom: -50px;padding-top: 50px;">404</h1>
+                <h2 style="font-size: 50px;margin-bottom: 10px;">無法找到該頁面</h2>
+                
+            </div>
+        </div>
+    </body>
+    <script src="../js/main.js"></script>
+    
+	<script src="../vuejs/vue.js"></script>
+	<script src="../node_modules/element-ui/lib/index.js"></script>
+    <script>
+    init(null)
+
+    const vu = new Vue({
+        el:"#app",
+        data: {
+            pageId: ["index","sponsor"],
+            show:false
+        },
+        methods: {
+            handleSelect: function(eve){
+                page = this.pageId[Number(eve)]
+                window.location.href=`${page}.html`
+            }
+        }
+    })
+
+    vu.$mount('#app')
+    vu.show = true
+</script>
+</html>

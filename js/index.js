@@ -1,19 +1,18 @@
-console.log("owo")
-
-$('#el').click(function() {
-    $('#el').css('background-color', 'green');
-});
+init(0)
 
 const vu = new Vue({
     el: '#app',
     data: {
-        visible: false,
+        pageId: ["index","sponsor"],
+        show:false
     },
     methods: {
         handleSelect: function(eve){
-            alert(eve)
+            page = this.pageId[Number(eve)]
+            window.location.href=`${page}.html`
         }
     }
 })
 
 vu.$mount('#app')
+vu.show = true

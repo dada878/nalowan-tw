@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="zh_TW">
     <head>
+        
+        <meta charset="utf-8">
         <title>那魯灣台灣伺服器</title>
         <link rel="icon" href="../assets/hub/favicon.png">
 
+		<link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/index.css">
         <!-- Jquery -->
         <script src="../node_modules/jquery/dist/jquery.min.js"></script>
         <!-- Element UI Css -->
         <link rel="stylesheet" href="../node_modules/element-ui/lib/theme-chalk/index.css">
-        <link rel="stylesheet" href="../css/index.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanstc.css">
         
+        
     </head>
-    <body Marginwidth="-1" Marginheight="-1" Topmargin="0" Lleftmargin="0" Rightmargin="0">
+    <body Marginwidth="-1" Marginheight="-1" Topmargin="0" Lleftmargin="0" Rightmargin="0" style="background-color: rgb(240, 240, 240)">
         <header>
 
         </header>
@@ -23,110 +27,83 @@
             
         </footer>
             <div id="app">
-                <!-- 選單 -->
-                <div class="anvbar">
-                    <img class="iconImg" src="../assets/hub/favicon.png">
-                    <el-menu 
-                        default-active="1"
-                        mode="horizontal" 
-                        @select="handleSelect"
-                        show-timeout="0"
-                        style="border-bottom:none"
-                    >
-                    <!-- style="border-bottom:#FFA600" -->
-                        <el-menu-item index="1">首頁</el-menu-item>
-                        <el-submenu index="2" show-timeout="0" hide-timeout="0">
-                          <template slot="title">官方教學</template>
-                          <el-menu-item index="2-1">同樂圈</el-menu-item>
-                          <el-menu-item index="2-2">小遊戲</el-menu-item>
-                          <el-menu-item index="2-2">指令列表</el-menu-item>
-                          <el-submenu index="2-3" show-timeout="0" hide-timeout="0">
-                            <template slot="title">更多..</template>
-                            <el-menu-item index="2-4-1">选项1</el-menu-item>
-                            <el-menu-item index="2-4-2">选项2</el-menu-item>
-                            <el-menu-item index="2-4-3">选项3</el-menu-item>
-                          </el-submenu>
-                        </el-submenu>
-                        <el-submenu index="3" show-timeout="0" hide-timeout="0">
-                            <template slot="title">最新資訊</template>
-                            <el-menu-item index="2-4-1">伺服器公告</el-menu-item>
-                            <el-menu-item index="2-4-2">活動資訊</el-menu-item>
-                        </el-submenu>
-                        <el-menu-item index="3">合作申請</el-menu-item>
-                        <el-tooltip class="item" effect="dark" content="論壇尚未開放" placement="bottom">
-                            <el-menu-item index="3" disabled>玩家論壇</el-menu-item>
-                          </el-tooltip>
-                        
-                        <el-menu-item index="4">贊助我們</el-menu-item>
-                        <el-menu-item index="5">製作團隊</el-menu-item>
-                        <el-menu-item index="6">錯誤回報</el-menu-item>
-                        <el-menu-item index="6">懲處名單</el-menu-item>
-                        <el-menu-item index="6">登入帳號</el-menu-item>
-                    </el-menu>
-                    
-                </div>
-                
-                <div class="titleImg">
-                    <div class="titleText">
-                        <h1>
-                            <span class="superTitle">那魯灣</span>台灣PVP伺服器
-                            <h3 style="margin-top: -50px;">無延遲戰鬥</h3>
-                        </h1>
-                    </div>
-                </div>
 
-                <div class="imger">
-                    <el-carousel trigger="click" height="200px">
-                      <el-carousel-item><img src='../assets/imgs/img1.png'></el-carousel-item>
-                      <el-carousel-item><img src='../assets/imgs/img2.png'></el-carousel-item>
-                      <el-carousel-item><img src='../assets/imgs/img3.png'></el-carousel-item>
-                      <el-carousel-item><img src='../assets/imgs/img4.png'></el-carousel-item>
-                      <el-carousel-item><img src='../assets/imgs/img5.png'></el-carousel-item>
-                    </el-carousel>
-                  </div>
+                <import id="anvbar"></import>
 
-                <!-- 測試區塊 -->
-                <div>
-                    <h1>owo</h1>
-                    <h1>owo</h1>
-                    <h1>owo</h1>
-                    <h1>owo</h1>
-                    <h1>owo</h1>
-                    <h1>owo</h1>
-                    <h1>owo</h1>
-                    <h1>owo</h1>
-                    <h1>owo</h1>
-                    <h1>owo</h1>
-                    <h1>owo</h1>
-                    <h1>owo</h1>
-                    <h1>owo</h1>
-                    <h1>owo</h1>
-                    <h1>owo</h1>
-                    <h1>owo</h1>
-                    <h1>owo</h1>
-                    <h1>owo</h1>
-                    <h1>owo</h1>
-                    <h1>owo</h1>
-                    <h1>owo</h1>
-                    <h1>owo</h1>
-                    <h1>owo</h1>
-                    <h1>owo</h1>
-                    <h1>owo</h1>
-                    <h1>owo</h1>
-                    <h1>owo</h1>
-                    <h1>owo</h1>
-                    <h1>owo</h1>
-                    <h1>owo</h1>
-                    <h1>owo</h1>
-                    <h1>owo</h1>
-                </div>
+            
+                <transition name="el-fade-in">
+                    <main v-show="show">
+                        <div class="titleImg">
+                            <div class="titleText">
+                                <h1>
+                                    <span class="superTitle">那魯灣</span>台灣PVP伺服器
+                                    <h3 style="margin-top: -50px;">體驗超低延遲戰鬥</h3>
+                                </h1>
+                            </div>
+                        </div>
+        
+                        <div class="imger">
+                            <el-carousel trigger="click" height="200px">
+                                <el-carousel-item><img src='../assets/imgs/img1.png'></el-carousel-item>
+                                <el-carousel-item><img src='../assets/imgs/img2.png'></el-carousel-item>
+                                <el-carousel-item><img src='../assets/imgs/img3.png'></el-carousel-item>
+                                <el-carousel-item><img src='../assets/imgs/img4.png'></el-carousel-item>
+                                <el-carousel-item><img src='../assets/imgs/img5.png'></el-carousel-item>
+                            </el-carousel>
+                            </div>
+        
+                        <!-- 測試區塊 -->
+                        <div>
+                            <h1>owo</h1>
+                            <h1>owo</h1>
+                            <h1>owo</h1>
+                            <h1>owo</h1>
+                            <h1>owo</h1>
+                            <h1>owo</h1>
+                            <h1>owo</h1>
+                            <h1>owo</h1>
+                            <h1>owo</h1>
+                            <h1>owo</h1>
+                            <h1>owo</h1>
+                            <h1>owo</h1>
+                            <h1>owo</h1>
+                            <h1>owo</h1>
+                            <h1>owo</h1>
+                            <h1>owo</h1>
+                            <h1>owo</h1>
+                            <h1>owo</h1>
+                            <h1>owo</h1>
+                            <h1>owo</h1>
+                            <h1>owo</h1>
+                            <h1>owo</h1>
+                            <h1>owo</h1>
+                            <h1>owo</h1>
+                            <h1>owo</h1>
+                            <h1>owo</h1>
+                            <h1>owo</h1>
+                            <h1>owo</h1>
+                            <h1>owo</h1>
+                            <h1>owo</h1>
+                            <h1>owo</h1>
+                            <h1>owo</h1>
+                        </div>
+                    </main>
+                </transition>
+
             </div>
     </body>
 
+    
     <!-- Vue & Element UI -->
+    <script src="../js/main.js"></script>
+   
+
     <script src="../vuejs/vue.js"></script>
 	<script src="../node_modules/element-ui/lib/index.js"></script>
 
     <!-- Javascript -->
     <script src="../js/index.js"></script>
+
+    
+
 </html>

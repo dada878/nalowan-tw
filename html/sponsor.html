@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>那魯灣台灣伺服器</title>
+		<link rel="icon" href="../assets/hub/favicon.png">
+		<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+		<link rel="stylesheet" href="../node_modules/element-ui/lib/theme-chalk/index.css">
+		<link rel="stylesheet" href="../css/main.css">
+		<link rel="stylesheet" href="../css/sponsor.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanstc.css">
+		
+	</head>
+	<body style="background-color: rgb(240, 240, 240)">
+		<div id="app">
+				<import id="anvbar"></import>
+				
+				<transition name="el-fade-in">
+                    <main v-show="show">
+						<div>
+							<div class="Card VIP vip1">
+								<h1>普通會員</h1>
+	
+								<h2>專屬聊天稱號-會員</h2>
+								<h2>戰隊人數上限+1</h2>
+								<h2>可用箭矢特效+1</h2>
+								<h2>-</h2>
+								<h2>-</h2>
+								<h2>-</h2>
+								<h2>-</h2>
+
+								<div class="price">
+									累積贊助 NT.199
+								</div>
+							</div>
+							<div class="Card VIP vip2">
+								<h1>高級會員</h1>
+	
+								<h2>專屬聊天稱號-高級會員</h2>
+								<h2>戰隊人數上限+3</h2>
+								<h2>可用箭矢特效+2</h2>
+								<h2>-</h2>
+								<h2>-</h2>
+								<h2>-</h2>
+								<h2>-</h2>
+
+								<div class="price">
+									累積贊助 NT.599
+								</div>
+	
+							</div>
+							<div class="Card VIP vip3">
+								<h1>黃金會員</h1>
+								
+								<h2>專屬聊天稱號-黃金會員</h2>
+								<h2>可使用場地選擇功能</h2>
+								<h2>解鎖完整自訂義模式功能</h2>
+								<h2>戰隊人數上限+3</h2>
+								<h2>可用箭矢特效+3</h2>
+								<h2>可用擊殺特效+1</h2>
+								<h2>-</h2>
+	
+								<div class="price">
+									累積贊助 NT.799
+								</div>
+							</div>
+							<div class="Card VIP vip4">
+								<h1>鑽石會員</h1>
+	
+								<h2>專屬聊天稱號-鑽石會員</h2>
+								<h2>優先體驗所有最新福利</h2>
+								<h2>可使用場地選擇功能</h2>
+								<h2>解鎖完整自訂義模式功能</h2>
+								<h2>戰隊人數上限+7</h2>
+								<h2>可用箭矢特效+4</h2>
+								<h2>可用擊殺特效+3</h2>
+
+								<div class="price">
+									累積贊助 NT.999
+								</div>
+	
+							</div>
+						</div>
+						<div class="Card">
+							<h2 style="margin: 1%; font-weight: normal;">詳細權限說明</h2>
+							<template>
+								<el-table
+									border
+									:header-cell-style="{ color: '#4b4b4b', 'font-weight': 'normal', 'background-color':'#f5f7fa'}"
+									class="table"
+									:data="tableData">
+									<el-table-column :resizable="false" class-name="col" prop="data1" label="" width="200"></el-table-column>
+									<el-table-column :resizable="false" prop="data2" label="玩家" width="150"></el-table-column>
+									<el-table-column :resizable="false" prop="data3" label="會員" width="150"></el-table-column>
+									<el-table-column :resizable="false" prop="data4" label="高級會員" width="150"></el-table-column>
+									<el-table-column :resizable="false" prop="data5" label="黃金會員" width="150"></el-table-column>
+									<el-table-column :resizable="false" prop="data6" label="鑽石會員" width="150"></el-table-column>
+								</el-table>
+							</template>
+						</div>
+						<div class="Card textBlock">
+							<h1 style="margin:1%;">贊助須知</h1>
+							<h2 style="font-weight: normal;text-align: left;">經營穩定的伺服器，是一項需要耗費大量金錢與精力的工作，若是玩家們在經濟上允許，能夠提供給伺服器金錢上的支持，本人感激不盡。<br><br>感謝你贊助那魯灣！
+
+								請於贊助後，於Discord私訊 魯魯#6666 告知！
+								
+								特別注意，贊助無法在因為違反伺服器規則被請出後申請退款。<br><br>貼心提醒: 贊助金額是使用「累積」的方式計算，舉例來說：
+								若你已贊助199，只需再贊助400即可變為高級會員，以此類推...
+								</h2>
+						</div>
+						<div class="Card textBlock">
+							<h1 style="margin:0.4%;">立即贊助</h1>
+							<el-divider></el-divider>
+							<h2>台灣人贊助區</h2>
+							<a target="_back" href="https://core.newebpay.com/EPG/naluwan/1RbACk"><el-button style="font-weight: bold;">使用藍新贊助</el-button></a>
+							<el-divider></el-divider>
+							<h2>非台灣人贊助區</h2>
+							<a target="_back" href="https://www.paypal.com/webapps/shoppingcart?flowlogging_id=afd48da076579&mfid=1639264641434_afd48da076579#/checkout/openButton"><el-button style="font-weight: bold;">使用PlayPay贊助</el-button></a>
+						</div>
+						<div class="Card rankBox">
+							<h1>乾爹贊助榜</h1>
+							<div class="top top2">
+								<h2>【第二名】</h2>
+								<h4>{{rankName[0]}}</h4>
+								<h3>贊助 NT.{{rankPrice[0]}}</h3>
+							</div>
+							<div class="top top1">
+								<h2>【第一名】</h2>
+								<h4>{{rankName[1]}}</h4>
+								<h3>贊助 NT.{{rankPrice[1]}}</h3>
+							</div>
+							<div class="top top3">
+								<h2>【第三名】</h2>
+								<h4>{{rankName[2]}}</h4>
+								<h3>贊助 NT.{{rankPrice[2]}}</h3>
+							</div>
+							<div class="moreRank">
+								<div v-for="item in rankName.length-3">
+									<div class="rank">【第{{item+3}}名】<br>{{rankName[item+2]}} 贊助NT.{{rankPrice[item+2]}}</div>
+								</div>
+							</div>
+						</div>
+					</main>
+				</transition>
+		</div>
+	</body>
+	<script src="../js/main.js"></script>
+	<script src="../vuejs/vue.js"></script>
+	<script src="../node_modules/element-ui/lib/index.js"></script>
+	<script src="../js/sponsor.js"></script>
+
+</html>
