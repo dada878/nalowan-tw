@@ -5,7 +5,6 @@ body {
     font-family: 'Noto Sans TC', sans-serif;
 }
 
-
 .anvbar {
     top:0px;
     background-color: white;
@@ -31,4 +30,8 @@ body {
     height: 55px;
     z-index: 1231232;
     float: left;
+}
+
+.inline {
+    display: inline;
 }

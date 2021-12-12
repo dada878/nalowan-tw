@@ -4,6 +4,43 @@
     color: rgb(255, 255, 148);
 }
 
+.spText {
+    font-size: 60px;
+}
+
+.BoxText {
+    font-size: 60px;
+    margin: 2%;
+}
+
+.hr {
+    width: 550px;
+}
+
+
+
+.clearfix:after { content: '\20'; display: block; height: 0; clear: both; visibility: hidden; overflow: hidden; }
+
+.oneSpBox img {
+    width: 50%;
+}
+
+.oneSpBox div h1 {
+    font-size: 45px;
+    margin: 1%;
+} 
+.oneSpBox div h2 {
+    font-size: 28px;
+    margin: 1%;
+} 
+
+.oneSpBox {
+    background-color: rgb(226, 226, 226);
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.383) 3px 3px 5px;
+}
+
 .titleText {
     padding: 7%;
     font-size: 300%;
@@ -12,7 +49,6 @@
 }
 
 .titleImg {
-    /* filter:brightness(70%); */
     width: 100%;
     height: 750px;
     background-repeat: no-repeat;
@@ -24,6 +60,18 @@
 }
 
 .imger {
-    width: 400px;
+    width: 100%;
 }
 
+.Box {
+    text-align: center;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.joinBox {
+    padding: 5%;
+    float: right;
+
+}
