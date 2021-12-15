@@ -1,9 +1,10 @@
+
 init(0)
 
 const vu = new Vue({
     el: '#app',
     data: {
-        pageId: ["index","sponsor"],
+        pageId: CONFIG_DATA.pages,
         show:false
     },
     methods: {

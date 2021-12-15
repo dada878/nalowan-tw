@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+    <head>
+        
+        <meta charset="utf-8">
+        <title>那魯灣台灣伺服器</title>
+        <link rel="icon" href="../assets/hub/favicon.png">
+
+		<link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/report.css">
+        <!-- Jquery -->
+        <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <!-- Element UI Css -->
+        <link rel="stylesheet" href="../node_modules/element-ui/lib/theme-chalk/index.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanstc.css">
+        
+        
+    </head>
+    <body Marginwidth="-1" Marginheight="-1" Topmargin="0" Lleftmargin="0" Rightmargin="0" style="background-color: rgb(240, 240, 240)">
+        <header>
+
+        </header>
+        <div>
+            
+        </main>
+        <footer>
+            
+        </footer>
+            <div id="app">
+                <template id="anvbar"></template>
+                <transition name="el-fade-in">
+                    <main v-show="show">
+                        <div class="reportBox">
+                            <h1 class="reportTitle">那魯灣錯誤回報系統</h1>
+                            <el-input placeholder="請輸入內容" v-model="inputNickname">
+                                <template slot="prepend">暱稱(選填)</template>
+                            </el-input>
+                            
+                            <div style="margin: 20px 0;"></div>
+                            <div class="radio">
+                                <h4 style="display: inline;font-weight: normal;margin-right: 10px;">選擇回報類型:</h4>
+                                <el-radio v-model="radio" label="1">伺服器錯誤/漏洞</el-radio>
+                                <el-radio v-model="radio" label="2">伺服器建議</el-radio>
+                                <el-radio v-model="radio" label="3">網站錯誤/漏洞</el-radio>
+                                <el-radio v-model="radio" label="4">網站建議</el-radio>
+                            </div>
+                              <div style="margin: 20px 0;"></div>
+                            <el-input type="textarea" :autosize="{ minRows: 12, maxRows: 12}"
+                             placeholder="輸入回報內容:錯誤、建議等" v-model="inputText">
+                                <template slot="prepend">Http://</template>
+                            </el-input>
+                            <div style="margin: 20px 0;"></div>
+                            <el-button type="primary" style="width: 80%;font-size: 20px;margin-left: 10%;">送出回報</el-button>
+                        </div>
+                        
+                    </main>
+                </transition>
+
+            </div>
+    </body>
+
+    
+    <!-- Vue & Element UI -->
+    <script src="../js/main.js"></script>
+   
+
+    <script src="../vuejs/vue.js"></script>
+	<script src="../node_modules/element-ui/lib/index.js"></script>
+
+    <!-- Javascript -->
+    <script src="../js/report.js"></script>
+
+    
+
+</html>

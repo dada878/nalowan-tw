@@ -1,0 +1,18 @@
+.reportBox {
+    width: 94%;
+    background-color: rgb(233, 233, 233);
+    margin: 2%;
+    border-radius: 20px;
+    padding: 1%;
+    box-shadow: rgba(0, 0, 0, 0.411) 2px 2px 5px;
+}
+
+.reportTitle {
+    text-align: center;
+    font-size: 60px;
+    font-weight: normal;
+}
+
+.radio {
+    font-weight: normal;
+}

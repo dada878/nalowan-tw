@@ -1,5 +1,11 @@
+CONFIG_DATA = new Object({
+	pages:["index","sponsor",'report']
+})
+
 function init(id) {
-	$('#anvbar').html(`<div class="anvbar" id="anvbar">
+	$('#anvbar').html(`
+	
+	<div class="anvbar" id="anvbar">
 				
 	<img class="iconImg" src="../assets/hub/favicon.png">
 	<el-menu 
@@ -22,15 +28,16 @@ function init(id) {
 			<el-menu-item index="2-4-1">伺服器公告</el-menu-item>
 			<el-menu-item index="2-4-2">活動資訊</el-menu-item>
 		</el-submenu>
-		<el-menu-item index="2">合作申請</el-menu-item>
+		<el-menu-item index="9">合作申請</el-menu-item>
 		<el-tooltip class="item" effect="dark" content="論壇尚未開放" placement="bottom">
 			<el-menu-item index="3" disabled>玩家論壇</el-menu-item>
 			</el-tooltip>
 		<el-menu-item index="1">贊助我們</el-menu-item>
 		<el-menu-item index="5">製作團隊</el-menu-item>
-		<el-menu-item index="6">錯誤回報</el-menu-item>
+		<el-menu-item index="2">錯誤回報</el-menu-item>
 		<el-menu-item index="6">懲處名單</el-menu-item>
 		<el-menu-item index="6">登入帳號</el-menu-item>
 	</el-menu>
 </div>`);
 }
+

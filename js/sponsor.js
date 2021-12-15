@@ -1,6 +1,7 @@
 init(1)
 
 $.get('https://script.google.com/macros/s/AKfycbxI3xxApAMGzI36F4HVGdrHiD2xDMJM5q_toPvxSM8a6U1PF94UKTTjZ5PIqCt_pZOfXw/exec', function(data) {
+    console.log(data)
     vu.rankName = data.split("|")[0].split(",")
     vu.rankPrice = data.split("|")[1].split(",")
     console.log(vu.rankPrice)
@@ -10,7 +11,7 @@ $.get('https://script.google.com/macros/s/AKfycbxI3xxApAMGzI36F4HVGdrHiD2xDMJM5q
 const vu = new Vue({
     el:"#app",
     data: {
-        pageId: ["index","sponsor"],
+        pageId: CONFIG_DATA.pages,
         show:false,
         rankPrice:["#","#","#"],
         rankName:["載入中...","載入中...","載入中..."],
