@@ -13,101 +13,197 @@
 	</head>
 	<body style="background-color: rgb(240, 240, 240)">
 		<div id="app">
-				<import id="anvbar"></import>
+				<template id="anvbar"></template>
 				
 				<transition name="el-fade-in">
                     <main v-show="show">
-						<div>
-							<div class="Card VIP vip1">
-								<h1>普通會員</h1>
-	
-								<h2>專屬聊天稱號-會員</h2>
-								<h2>戰隊人數上限+1</h2>
-								<h2>可用箭矢特效+1</h2>
-								<h2>-</h2>
-								<h2>-</h2>
-								<h2>-</h2>
-								<h2>-</h2>
-
-								<div class="price">
-									累積贊助 NT.199
+						<!-- 表格 -->
+						<div class="head">
+							<div class="table">
+								<div class="row rowLeft">
+								  <div class="headerLeft header">
+									<h2>權限說明</h2>
+								  </div>
+								  <div class="indexLeft index sidebar">
+									<h3>專屬聊天樣式/稱號</h3>
+									<h3>戰隊人數上限</h3>
+									<h3>可用箭矢特效數量</h3>
+									<h3>自訂義模式創建上限</h3>
+									<h3>使用場地選擇器</h3>
+									<h3>可用擊殺特效數量</h3>
+									<h3>自訂義模式完整功能
+										<el-popover placement="top-start" title="完整自訂義模式功能" close-delay="0" width="200" trigger="hover" content="可調整方塊限制、是否消耗飽食度、勳章功能、騎馬戰鬥模式、開始前可否移動、是否只能用弓箭、無延遲戰鬥模式、藥水效果設定、血量顯示設定、彩色模式名稱">
+											<i slot="reference" class="el-icon-question"></i>
+										</el-popover></h3>
+									<h3>優先體驗所有最新福利</h3>
+									
+								  </div>
 								</div>
-							</div>
-							<div class="Card VIP vip2">
-								<h1>高級會員</h1>
-	
-								<h2>專屬聊天稱號-高級會員</h2>
-								<h2>戰隊人數上限+3</h2>
-								<h2>可用箭矢特效+2</h2>
-								<h2>-</h2>
-								<h2>-</h2>
-								<h2>-</h2>
-								<h2>-</h2>
-
-								<div class="price">
-									累積贊助 NT.599
+								<div class="row">
+									<div class="color1 header">
+										<h2>會員</h2>
+									</div>
+									<div class="index2 index" id="primary">
+									  <h3><i class="el-icon-success"></i></h3>
+									  <h3>6</h3>
+									  <h3>1</h3>
+									  <h3>2</h3>
+									  <h3><i class="el-icon-circle-close"></i></h3>
+									  <h3><i class="el-icon-circle-close"></i></h3>
+									  <h3><i class="el-icon-circle-close"></i></h3>
+									  <h3><i class="el-icon-circle-close"></i></h3>
+									  <h2>累積 NT.99</h2>
+									  <button class="button color1">立即贊助</button>
+									</div>
 								</div>
-	
-							</div>
-							<div class="Card VIP vip3">
-								<h1>黃金會員</h1>
-								
-								<h2>專屬聊天稱號-黃金會員</h2>
-								<h2>可使用場地選擇功能</h2>
-								<h2>解鎖完整自訂義模式功能</h2>
-								<h2>戰隊人數上限+3</h2>
-								<h2>可用箭矢特效+3</h2>
-								<h2>可用擊殺特效+1</h2>
-								<h2>-</h2>
-	
-								<div class="price">
-									累積贊助 NT.799
+								<div class="row">
+								  <div class="color2 header">
+									  <h2>高級會員</h2>
+								  </div>
+								  <div class="index sidebar">
+									<h3><i class="el-icon-success"></i></h3>
+									<h3>8</h3>
+									<h3>2</h3>
+									<h3>4</h3>
+									<h3><i class="el-icon-circle-close"></i></h3>
+									
+									<h3><i class="el-icon-circle-close"></i></h3>
+									<h3><i class="el-icon-circle-close"></i></h3>
+									<h3><i class="el-icon-circle-close"></i></h3>
+									<h2>累積 NT.5199</h2>
+									<button class="button color2">立即贊助</button>
+								  </div>
 								</div>
-							</div>
-							<div class="Card VIP vip4">
-								<h1>鑽石會員</h1>
-	
-								<h2>專屬聊天稱號-鑽石會員</h2>
-								<h2>優先體驗所有最新福利</h2>
-								<h2>可使用場地選擇功能</h2>
-								<h2>解鎖完整自訂義模式功能</h2>
-								<h2>戰隊人數上限+7</h2>
-								<h2>可用箭矢特效+4</h2>
-								<h2>可用擊殺特效+3</h2>
-
-								<div class="price">
-									累積贊助 NT.999
+								<div class="row">
+								  <div class="color3 header">
+									  <h2>黃金會員</h2>
+								  </div>
+								  <div class="index sidebar">
+									<h3><i class="el-icon-success"></i></h3>
+									<h3>8</h3>
+									<h3>3</h3>
+									<h3>8</h3>
+									<h3><i class="el-icon-success"></i></h3>
+									
+									<h3>1</h3>
+									<h3><i class="el-icon-success"></i></h3>
+									<h3><i class="el-icon-circle-close"></i></h3>
+									<h2>累積 NT.799</h2>
+									<button class="button color3">立即贊助</button>
+								  </div>
 								</div>
+								<div class="row">
+								  <div class="headerRight color4 header">
+									  <h2>鑽石會員</h2>
+								  </div>
+								  <div class="indexRight index sidebar">
+									<h3><i class="el-icon-success"></i></h3>
+									<h3>12</h3>
+									<h3>4</h3>
+									<h3>12</h3>
+									<h3><i class="el-icon-success"></i></h3>
+									
+									<h3>3</h3>
+									<h3><i class="el-icon-success"></i></h3>
+									<h3><i class="el-icon-success"></i></h3>
+									<h2>累積 NT.999</h2>
+									<button class="button color4">立即贊助</button>
+								  </div>
+							  </div>
+							<!-- <div>
+								<div class="Card VIP vip1">
+									<h1>普通會員</h1>
+		
+									<h2>專屬聊天稱號-會員</h2>
+									<h2>戰隊人數上限+1</h2>
+									<h2>可用箭矢特效+1</h2>
+									<h2>-</h2>
+									<h2>-</h2>
+									<h2>-</h2>
+									<h2>-</h2>
 	
+									<div class="price">
+										累積贊助 NT.199
+									</div>
+								</div>
+								<div class="Card VIP vip2">
+									<h1>高級會員</h1>
+		
+									<h2>專屬聊天稱號-高級會員</h2>
+									<h2>戰隊人數上限+3</h2>
+									<h2>可用箭矢特效+2</h2>
+									<h2>-</h2>
+									<h2>-</h2>
+									<h2>-</h2>
+									<h2>-</h2>
+	
+									<div class="price">
+										累積贊助 NT.599
+									</div>
+		
+								</div>
+								<div class="Card VIP vip3">
+									<h1>黃金會員</h1>
+									
+									<h2>專屬聊天稱號-黃金會員</h2>
+									<h2>可使用場地選擇功能</h2>
+									<h2>解鎖完整自訂義模式功能</h2>
+									<h2>戰隊人數上限+3</h2>
+									<h2>可用箭矢特效+3</h2>
+									<h2>可用擊殺特效+1</h2>
+									<h2>-</h2>
+		
+									<div class="price">
+										累積贊助 NT.799
+									</div>
+								</div>
+								<div class="Card VIP vip4">
+									<h1>鑽石會員</h1>
+		
+									<h2>專屬聊天稱號-鑽石會員</h2>
+									<h2>優先體驗所有最新福利</h2>
+									<h2>可使用場地選擇功能</h2>
+									<h2>解鎖完整自訂義模式功能</h2>
+									<h2>戰隊人數上限+7</h2>
+									<h2>可用箭矢特效+4</h2>
+									<h2>可用擊殺特效+3</h2>
+	
+									<div class="price">
+										累積贊助 NT.999
+									</div>
+		
+								</div>
+							</div> -->
+							<!-- <div class="Card">
+								<h2 style="margin: 1%; font-weight: normal;">詳細權限說明</h2>
+								<template>
+									<el-table
+										border
+										:header-cell-style="{ color: '#4b4b4b', 'font-weight': 'normal', 'background-color':'#f5f7fa'}"
+										class="table"
+										:data="tableData">
+										<el-table-column :resizable="false" class-name="col" prop="data1" label="" width="200"></el-table-column>
+										<el-table-column :resizable="false" prop="data2" label="玩家" width="150"></el-table-column>
+										<el-table-column :resizable="false" prop="data3" label="會員" width="150"></el-table-column>
+										<el-table-column :resizable="false" prop="data4" label="高級會員" width="150"></el-table-column>
+										<el-table-column :resizable="false" prop="data5" label="黃金會員" width="150"></el-table-column>
+										<el-table-column :resizable="false" prop="data6" label="鑽石會員" width="150"></el-table-column>
+									</el-table>
+								</template>
+							</div> -->
+							<div class="textBlock">
+								<h1 style="font-size: 50px;margin: 1%;">贊助須知</h1>
+								<h2 style="font-weight: normal;text-align: left;">經營穩定的伺服器，是一項需要耗費大量金錢與精力的工作，若是玩家們在經濟上允許，能夠提供給伺服器金錢上的支持，本人感激不盡。<br><br>感謝你贊助那魯灣！
+	
+									請於贊助後，於Discord私訊 魯魯#6666 告知！
+									
+									特別注意，贊助無法在因為違反伺服器規則被請出後申請退款。<br><br>貼心提醒: 贊助金額是使用「累積」的方式計算，舉例來說：
+									若你已贊助199，只需再贊助400即可變為高級會員，以此類推...
+									</h2>
 							</div>
 						</div>
-						<div class="Card">
-							<h2 style="margin: 1%; font-weight: normal;">詳細權限說明</h2>
-							<template>
-								<el-table
-									border
-									:header-cell-style="{ color: '#4b4b4b', 'font-weight': 'normal', 'background-color':'#f5f7fa'}"
-									class="table"
-									:data="tableData">
-									<el-table-column :resizable="false" class-name="col" prop="data1" label="" width="200"></el-table-column>
-									<el-table-column :resizable="false" prop="data2" label="玩家" width="150"></el-table-column>
-									<el-table-column :resizable="false" prop="data3" label="會員" width="150"></el-table-column>
-									<el-table-column :resizable="false" prop="data4" label="高級會員" width="150"></el-table-column>
-									<el-table-column :resizable="false" prop="data5" label="黃金會員" width="150"></el-table-column>
-									<el-table-column :resizable="false" prop="data6" label="鑽石會員" width="150"></el-table-column>
-								</el-table>
-							</template>
-						</div>
-						<div class="Card textBlock">
-							<h1 style="margin:1%;">贊助須知</h1>
-							<h2 style="font-weight: normal;text-align: left;">經營穩定的伺服器，是一項需要耗費大量金錢與精力的工作，若是玩家們在經濟上允許，能夠提供給伺服器金錢上的支持，本人感激不盡。<br><br>感謝你贊助那魯灣！
 
-								請於贊助後，於Discord私訊 魯魯#6666 告知！
-								
-								特別注意，贊助無法在因為違反伺服器規則被請出後申請退款。<br><br>貼心提醒: 贊助金額是使用「累積」的方式計算，舉例來說：
-								若你已贊助199，只需再贊助400即可變為高級會員，以此類推...
-								</h2>
-						</div>
+						
 						<div class="Card textBlock">
 							<h1 style="margin:0.4%;">立即贊助</h1>
 							<el-divider></el-divider>
@@ -121,13 +217,13 @@
 							<h1>乾爹贊助榜</h1>
 							<div class="top top2">
 								<h2>【第二名】</h2>
-								<h4>{{rankName[0]}}</h4>
-								<h3>贊助 NT.{{rankPrice[0]}}</h3>
+								<h4>{{rankName[1]}}</h4>
+								<h3>贊助 NT.{{rankPrice[1]}}</h3>
 							</div>
 							<div class="top top1">
 								<h2>【第一名】</h2>
-								<h4>{{rankName[1]}}</h4>
-								<h3>贊助 NT.{{rankPrice[1]}}</h3>
+								<h4>{{rankName[0]}}</h4>
+								<h3>贊助 NT.{{rankPrice[0]}}</h3>
 							</div>
 							<div class="top top3">
 								<h2>【第三名】</h2>

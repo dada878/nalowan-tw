@@ -32,25 +32,26 @@
                     <main v-show="show">
                         <div class="reportBox">
                             <h1 class="reportTitle">那魯灣錯誤回報系統</h1>
+
                             <el-input placeholder="請輸入內容" v-model="inputNickname">
-                                <template slot="prepend">暱稱(選填)</template>
+                            <template slot="prepend">暱稱(選填)</template>
                             </el-input>
                             
                             <div style="margin: 20px 0;"></div>
                             <div class="radio">
                                 <h4 style="display: inline;font-weight: normal;margin-right: 10px;">選擇回報類型:</h4>
-                                <el-radio v-model="radio" label="1">伺服器錯誤/漏洞</el-radio>
-                                <el-radio v-model="radio" label="2">伺服器建議</el-radio>
-                                <el-radio v-model="radio" label="3">網站錯誤/漏洞</el-radio>
-                                <el-radio v-model="radio" label="4">網站建議</el-radio>
+                                <el-radio v-model="radio" label="伺服器錯誤/漏洞">伺服器錯誤/漏洞</el-radio>
+                                <el-radio v-model="radio" label="伺服器建議">伺服器建議</el-radio>
+                                <el-radio v-model="radio" label="網站錯誤/漏洞">網站錯誤/漏洞</el-radio>
+                                <el-radio v-model="radio" label="網站建議">網站建議</el-radio>
                             </div>
                               <div style="margin: 20px 0;"></div>
-                            <el-input type="textarea" :autosize="{ minRows: 12, maxRows: 12}"
+                            <el-input type="textarea" :autosize="{ minRows: 11, maxRows: 11}"
                              placeholder="輸入回報內容:錯誤、建議等" v-model="inputText">
                                 <template slot="prepend">Http://</template>
                             </el-input>
                             <div style="margin: 20px 0;"></div>
-                            <el-button type="primary" style="width: 80%;font-size: 20px;margin-left: 10%;">送出回報</el-button>
+                            <el-button onclick="vu.sendData()" type="primary" style="width: 80%;font-size: 20px;margin-left: 10%;">送出回報</el-button>
                         </div>
                         
                     </main>

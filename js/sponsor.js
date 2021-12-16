@@ -1,5 +1,9 @@
 init(1)
 
+$(document).ready(function() {
+  $('.sidebar').css('height', $('#primary').height());
+});
+
 $.get('https://script.google.com/macros/s/AKfycbxI3xxApAMGzI36F4HVGdrHiD2xDMJM5q_toPvxSM8a6U1PF94UKTTjZ5PIqCt_pZOfXw/exec', function(data) {
     console.log(data)
     vu.rankName = data.split("|")[0].split(",")
@@ -7,6 +11,7 @@ $.get('https://script.google.com/macros/s/AKfycbxI3xxApAMGzI36F4HVGdrHiD2xDMJM5q
     console.log(vu.rankPrice)
     console.log(vu.rankName)
 })
+
 
 const vu = new Vue({
     el:"#app",
