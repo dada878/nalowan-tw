@@ -1,3 +1,7 @@
+main {
+  height: 1000px;
+}
+
 .Card {
     text-align: center;
     border-style: solid;
@@ -7,6 +11,19 @@
     margin: 20px;
     box-shadow: rgba(0, 0, 0, 0.431) 3px 3px 5px;
 }
+
+.rankBox {
+  width: 96.5%;
+  padding-bottom: 15px;
+  float: left;
+  margin: 20px;
+  text-align: center;
+}
+
+.rankBox h1 {
+  font-size: 350%;
+}
+
 
 .textBlock {
     background-color: rgb(238, 238, 238);
@@ -30,11 +47,6 @@
 .VIP {
     width: 22%;
     height: 650px;
-}
-
-.rankBox {
-    width: 96.5%;
-    padding-bottom: 15px;
 }
 
 .rankBox h4 {
@@ -104,11 +116,13 @@
 }
 
 .top:hover {
-    border-color: black;
+    /* border-color: black; */
+    -webkit-filter:brightness(1.1);
 }
 
 .rank:hover {
-    border-color: black;
+    /* border-color: black; */
+    -webkit-filter:brightness(1.1);
 }
 
 .VIP:hover {

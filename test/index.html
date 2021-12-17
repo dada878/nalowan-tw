@@ -9,122 +9,19 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanstc.css">
 
       <style>
-        .table {
-          margin: 3%;
+        .owo {
+          background-color: blue;
         }
-
-        .row {
-          width: 10%;
-          text-align: center;
-          float: left;
-        }
-
-        .rowLeft {
-          width: 15%;
-        }
-
-        .button {
-          margin-bottom: 10px;
-          border-style: solid;
-          border-radius: 10px;
-          box-shadow: rgba(0, 0, 0, 0.414) 1px 1px 3px;
-          width: 80%;
-          height: 30px;
-          color: white;
-          border-style: none;
-          font-size: 18px;
-          font-weight: bold;
-          cursor: pointer; 
-        }
-
-        .button:hover {
-          -webkit-filter:opacity(0.7);
-        }
-
-        .button:active {
-          -webkit-filter:opacity(0.4);
-        }
-
-        .index {
-          padding-top: 4px;
-          margin-top: -10px;
-          background-color: rgb(255, 255, 255);
-          color: rgb(66, 66, 66);
-          border-style: none;
-          box-shadow: rgba(0, 0, 0, 0.452) 0px 0px 5px;
-        }
-
-        .indexLeft {
-          margin-top: -13px;
-          border-radius: 0px 0px 0px 20px;
-        }
-
-        .indexRight {
-          border-style: none;
-          border-radius: 0px 0px 20px 0px;
-        }
-
-        .index h3 {
-            margin: 10px;
-            border-style: solid;
-            border-color: rgb(170, 170, 170);
-            border-width: 0px 0px 1px 0px;
-            height: 40px;
-        }
-
-        .index h2 {
-            margin: 2px;
-            font-size: 17px;
-            font-weight: normal;
-        }
-
-        .index:hover {
-          background-color: rgb(247, 247, 247);
-        }
-
-        .header {
-          color: white;
-          font-weight: normal;
-          border-style: none;
-          box-shadow: rgba(0, 0, 0, 0.452) 0px 0px 5px;
-          padding: 2%;
-        }
-
-        .headerLeft {
-          background-color: #B0B0B0;
-          border-radius: 20px 0px 0px 0px;
-        }
-
-        .headerRight {
-          border-radius: 0px 20px 0px 0px;
-        }
-
-        .color1 {background-color: #EDBB1C;}
-        .color2 {background-color: #FE2F6D;}
-        .color3 {background-color: #39BDCA;}
-        .color4 {background-color: #7241E8;}
-
-
-
-        .header:hover { 
-          -webkit-filter:opacity(0.99);
-        } 
-
       </style>
 
     </head>
     <body>
       <div id="app">
         <template id="anvbar"></template>
+
+
         <!-- 表格 -->
-        <el-popover
-        placement="top-start"
-        title="标题"
-        width="200"
-        trigger="hover"
-        content="这是一段内容,这是一段内容,这是一段内容,这是一段内容。">
-        <h3 slot="reference">wqe</h3>
-      </el-popover>
+        <button @click="test">點我plz</button>
         
           
         </div>
@@ -152,6 +49,11 @@
               handleSelect: function(eve){
                   page = this.pageId[Number(eve)]
                   window.location.href=`${page}.html`
+              },
+              test: function() {
+                this.$alert('<el-button class="owo">这是片段</el-button>', 'HTML 片段', {
+                 dangerouslyUseHTMLString: true
+                });
               }
           }
       })
