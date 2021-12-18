@@ -30,6 +30,7 @@
                 <template id="anvbar"></template>
                 <transition name="el-fade-in">
                     <main v-show="show">
+                        <div class="bodyBox">
                         <div class="reportBox">
                             <h1 class="reportTitle">那魯灣錯誤回報系統</h1>
 
@@ -53,7 +54,7 @@
                             <div style="margin: 20px 0;"></div>
                             <el-button onclick="vu.sendData()" type="primary" style="width: 80%;font-size: 20px;margin-left: 10%;">送出回報</el-button>
                         </div>
-                        
+                        </div>
                     </main>
                 </transition>
 

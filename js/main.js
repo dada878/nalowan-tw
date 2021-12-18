@@ -18,7 +18,7 @@ function init(id) {
 	<!-- style="border-bottom:#FFA600" -->
 		<el-menu-item index="0">首頁</el-menu-item>
 		<el-submenu show-timeout=0 hide-timeout=0 index="2"> <!--  show-timeout=0 hide-timeout=0 -->
-			<template slot="title">官方教學</template>
+			<template slot="title">遊戲指南</template>
 			<el-menu-item index="2-1">同樂圈</el-menu-item>
 			<el-menu-item index="2-2">小遊戲</el-menu-item>
 			<el-menu-item index="2-2">指令列表</el-menu-item>

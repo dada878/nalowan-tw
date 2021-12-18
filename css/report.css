@@ -1,8 +1,11 @@
+
+
 .reportBox {
-    width: 94%;
+    width: 70%;
     background-color: rgb(233, 233, 233);
     margin: 2%;
     border-radius: 20px;
+    margin-left: 14%;
     padding: 1%;
     box-shadow: rgba(0, 0, 0, 0.411) 2px 2px 5px;
 }

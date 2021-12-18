@@ -8,13 +8,10 @@
     font-size: 60px;
 }
 
-.BoxText {
-    font-size: 60px;
-    margin: 2%;
-}
-
 .hr {
-    width: 550px;
+    width: 450px;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
 }
 
 
@@ -71,7 +68,27 @@
 }
 
 .joinBox {
-    padding: 5%;
     float: right;
-
+    margin-right: 13%;
+    padding-top: 2%;
 }
+
+.iframe {
+    padding-left: 5%;
+}
+
+.JoinBigBox {
+    text-align: center;
+    width:100%;
+}
+
+
+.BoxText {
+    font-size: 60px;
+    margin: 2%;
+}
+
+/* .app {
+    height: 100vh;
+    overflow: hidden;
+} */
