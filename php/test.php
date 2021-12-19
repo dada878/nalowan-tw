@@ -1,3 +1,10 @@
-<php?
-echo "123"
->
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+echo "My first PHP script!";
+?>
+
+</body>
+</html>

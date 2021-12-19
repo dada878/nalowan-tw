@@ -41,3 +41,15 @@ body {
 .inline {
     display: inline;
 }
+
+.footer {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.514) 0px 1px 8px;
+}
+
+.footer div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10%;
+    background-color: rgb(255, 255, 255);
+}

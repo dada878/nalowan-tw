@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+    <head>
+        
+        <meta charset="utf-8">
+        <title>那魯灣台灣伺服器</title>
+        <link rel="icon" href="../../assets/hub/favicon.png">
+
+		<link rel="stylesheet" href="../../css/help/gp.css">
+        <link rel="stylesheet" href="../../css/main.css">
+        <!-- Jquery -->
+        <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+        <!-- Element UI Css -->
+        <link rel="stylesheet" href="../../node_modules/element-ui/lib/theme-chalk/index.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanstc.css">
+
+
+    </head>
+    <body Marginwidth="-1" Marginheight="-1" Topmargin="0" Lleftmargin="0" Rightmargin="0" style="background-color: rgb(240, 240, 240)">
+            <div id="app">
+                <el-backtop :right="10" :bottom="10"></el-backtop>
+                <template id="anvbar"></template>
+                
+                <transition name="el-fade-in">
+                    <main v-show="show">
+                        
+                        <div class="helpBox">
+                            <h1>開始使用小遊戲系統！</h1>
+                            <h3>
+                                很高興能看到你來這裡，歡迎使用那魯灣同樂圈系統！<br>
+                                這個系統的使用方式非常簡單，步驟其實就是: 組隊 → 玩遊戲
+                            </h3>
+                            <iframe width="100%" height="430" src="https://www.youtube.com/embed/fGjbr1FXxqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <h2>如何組隊</h2>
+                            <h3>
+                                首先，從社交圈或是 Discord 找幾個朋友登入那魯灣，他們會作為等等跟你一起玩遊戲的重要夥伴！
+                            </h3>
+                            <img src="../../assets/help/gp1.png" width="50%"/>
+                            <h3>
+                                請先使用<span>/gp</span>(或是 <span>/gparty</span>)指令，您應該會看到下圖很豐富的指令列表，這些不用急著了解，可以等之後有空再看看
+                            </h3>
+                            <img src="../../assets/help/gp2.png" width="100%"/>
+                            <h3>
+                                使用<span>/gp invite <朋友的 Minecraft ID></span>來邀請你的朋友加入同樂圈
+                            </h3>
+                            <img src="../../assets/help/gp3.png" width="100%"/>
+                            <h3>
+                                這個時候，你的朋友應該會看到類似下方的訊息，只要請他點一下<span>接受</span>按鈕，就可以加入你的同樂圈囉
+                            </h3>
+                            <img src="../../assets/help/gp4.png" width="100%"/>
+                            <img src="../../assets/help/gp4-2.png" width="100%"/>
+                            <h3>
+                                (額外補充) 可以使用<span>/gp list</span>確認朋友是否真的加入了
+                            </h3>
+                            <img src="../../assets/help/gp5.png" width="50%"/>
+                            <h2>組隊之後呢？怎麼玩遊戲</h2>
+                            <h3>
+                                其實最困難的是怎麼組隊，一旦隊伍組起來，一切就好處理了！玩遊戲的方法非常簡單，讓我們一起來試試看！
+                                <br>
+                                <br>
+                                您應該會看到，在那魯灣的大廳擁有許多的 NPC，分別敘述了點擊他們之後會發生什麼事情
+                            </h3>
+                            <img src="../../assets/help/gp6.png" width="100%"/>
+                            <h3>
+                                這次教學，我們就先點擊<span>點我玩小遊戲</span>的NPC好了！點它之後，應該會看到遊戲出現了下方這種充滿了各式各樣小遊戲的界面，使用<span>/mg</span>指令也可以達到同樣效果喔
+                            </h3>
+                            <img src="../../assets/help/gp7.png" width="100%"/>
+                            <h3>
+                                你可以選擇自己最喜歡的小遊戲來玩，但這畢竟是教學，我們還是選一個曾經在Minecraft裡面最經典的飢餓遊戲來玩玩看好了！(飢餓遊戲?)
+                            </h3>
+                            <img src="../../assets/help/gp8.png" width="100%"/>
+                            <img src="../../assets/help/gp9.png" width="100%"/>
+                            <h2>恭喜你！</h2>
+                            <h3>
+                                到目前為止，你已經知道怎麼跟朋友在那魯灣暢玩小遊戲了，盡情享受跟朋友們愉快玩遊戲、聊天打屁的時光吧！<br>
+                                <br>
+                                當然，要玩得更開心，你一定要看底下的補充資料，畢竟現在還有很多功能沒介紹。<br>
+                            </h3>
+                            <el-collapse accordion>
+                                <el-collapse-item class="collapse" title="玩一玩斷線，怎麼重登？" name="1">
+                                    <h3>使用<span>/mg rejoin</span>即可回到小遊戲中</h3>
+                                </el-collapse-item>
+                                <el-collapse-item class="collapse" title="如何將同樂圈的所有人召喚到你在的小遊戲" name="2">
+                                     <h3>如果你是隊長的話，使用<span>/gp warp</span>指令即可召喚所有人到你所在的伺服器喔</h3>
+                                </el-collapse-item>
+                                <el-collapse-item class="collapse" title="如何回到大廳" name="3">
+                                    <h3>想回到大廳的話，使用<span>/hub</span>指令就可以囉</h3>
+                                </el-collapse-item>
+                                <el-collapse-item class="collapse" title="傳送一則只有同樂圈的人看得到的訊息" name="4">
+                                    <h3>
+                                        使用<span>/gpc <訊息></span>即可傳送只有同樂圈看得到的訊息喔！<br>
+                                        使用<span>/gp chat on</span>可以開啟持續聊天模式，所有訊息都會送到同樂圈中
+                                    </h3>
+                                </el-collapse-item>
+                                <el-collapse-item class="collapse" title="常用同樂圈指令整合" name="6">
+                                    <h3><span>/gp create</span> 創建同樂圈</h3>
+                                    <h3><span>/gp invite <玩家ID></span> 邀請玩家進入同樂圈</h3>
+                                    <h3><span>/gp list <玩家ID></span> 查看同樂圈資訊</h3>
+                                    <h3><span>/gp globalparties<玩家ID></span> 查看目前所有公開同樂圈</h3>
+                                    <h3><span>/gp ask <同樂圈名稱></span> 請求加入同樂圈</h3>
+                                    <h3><span>/gp leave <同樂圈名稱></span> 離開同樂圈(擁有者離開=解散)</h3>
+                                </el-collapse-item>
+                              </el-collapse>
+                        </div>
+
+                        
+                        
+                    </main>
+                </transition>
+
+            </div>
+    </body>
+
+    
+    <!-- Vue & Element UI -->
+    <!-- <script src="../js/main.js"></script> -->
+    <script src="../../js/main.js"></script>
+   
+
+    <script src="../../vuejs/vue.js"></script>
+	<script src="../../node_modules/element-ui/lib/index.js"></script>
+
+    <!-- Javascript -->
+    <script src="../../js/help/gp.js"></script>
+
+
+</html>

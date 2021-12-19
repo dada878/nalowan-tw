@@ -8,10 +8,7 @@ const vu = new Vue({
         show:false
     },
     methods: {
-        handleSelect: function(eve){
-            page = this.pageId[Number(eve)]
-            window.location.href=`${page}.html`
-        }
+        handleSelect: CONFIG_DATA.handleSelect
     }
 })
 

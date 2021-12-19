@@ -1,0 +1,60 @@
+.helpBox {
+    margin: 0 auto;
+    width: 50%;
+    background-color: rgb(228, 228, 228);
+    padding: 2%;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, 0.466) 2px 2px 5px;
+    height: 100%;
+    border-radius: 10px;
+    font-weight:bold;
+}
+
+.helpBox h1 {
+    font-size: 45px;
+    margin: 0%;
+}
+
+.helpBox h2 {
+    font-size: 30px;
+    /* margin: 0%; */
+}
+
+body {
+    font-weight:normal;
+} 
+
+main {
+    padding: 30px;
+}
+
+.helpBox span {
+    background-color: rgb(255, 255, 255);
+    padding-left:5px ;
+    padding-right: 5px;
+    color: #EB6060;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.collapse div {
+    background-color: rgb(241, 241, 241);
+    font-size: 20px;
+    border-style:solid;
+    border-radius: 5px;
+    padding: 3px;
+    border-color: gray;
+    border-width: 1px;
+}
+
+.collapse div div {
+    border-style: none;
+}
+
+.collapse .el-collapse-item__wrap div {
+    background-color: rgb(211, 211, 211);
+}
+
+.collapse div h3 {
+    font-size: 15px;
+}

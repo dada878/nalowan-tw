@@ -1,5 +1,9 @@
 CONFIG_DATA = new Object({
-	pages:["index","sponsor",'report']
+	pages:["index","sponsor",'report','help/gp','help/new'],
+	handleSelect: function(eve){
+		page = this.pageId[Number(eve)]
+		window.location.href=`http://${document.domain}/index/html/${page}.html`
+	}
 })
 
 function init(id) {
@@ -7,7 +11,7 @@ function init(id) {
 	
 	<div class="anvbar" id="anvbar">
 				
-	<img class="iconImg" src="../assets/hub/favicon.png">
+	<img class="iconImg" src="http://${document.domain}/index/assets/hub/favicon.png">
 	<el-menu 
 		default-active="${id}"
 		mode="horizontal" 
@@ -19,9 +23,9 @@ function init(id) {
 		<el-menu-item index="0">首頁</el-menu-item>
 		<el-submenu show-timeout=0 hide-timeout=0 index="2"> <!--  show-timeout=0 hide-timeout=0 -->
 			<template slot="title">遊戲指南</template>
-			<el-menu-item index="2-1">同樂圈</el-menu-item>
-			<el-menu-item index="2-2">小遊戲</el-menu-item>
-			<el-menu-item index="2-2">指令列表</el-menu-item>
+			<el-menu-item index="4">新手必看</el-menu-item>
+			<el-menu-item index="3">同樂圈&小遊戲</el-menu-item>
+			<el-menu-item index="2-2">選項awa</el-menu-item>
 		</el-submenu>
 		<el-submenu show-timeout=0 hide-timeout=0 index="3"> <!--  show-timeout=0 hide-timeout=0 -->
 			<template slot="title">最新資訊</template>

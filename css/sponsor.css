@@ -246,10 +246,23 @@ main {
     border-radius: 0px 20px 0px 0px;
   }
 
-  .color1 {background-color: #EDBB1C;}
+
+  /* 
+  #29D629
+  #38761D
+  #FFFF00
+  #15CFDA
+  */
+
+  /* .color1 {background-color: #EDBB1C;}
   .color2 {background-color: #FE2F6D;}
   .color3 {background-color: #39BDCA;}
-  .color4 {background-color: #7241E8;}
+  .color4 {background-color: #7241E8;} */
+
+  .color1 {background-color:  #29D629;}
+  .color2 {background-color: #38761D;}
+  .color3 {background-color: #ffae00;}
+  .color4 {background-color: #15b3da;}
 
   .header:hover { 
     -webkit-filter:opacity(0.99);
